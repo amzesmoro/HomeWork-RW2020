@@ -2,9 +2,9 @@
 Thanks for [raywanderlich.com](raywenderlich.com) that has chosen me to be a student/participant for this Bootcamp.
 
 ## Profile
-Profile Image | About Me
-------------- | --------
-<img src="images/img_amzesmoro.jpeg" width="15%" title="Amzesmoro's Profile Image"> | * **Name**: Amzesmoro Sianturi
+<img src="images/img_amzesmoro.jpeg" width="15%" title="Amzesmoro's Profile Image"> 
+
+* **Name**: Amzesmoro Sianturi
 * **Discord Username**: TM Amzesmoro Sianturi
 * **Location**: Siborongborong North Sumatra, Indonesia
 
