@@ -1,13 +1,14 @@
 data class Card(val pip: String, val suit: Char)
 
 fun createDeck(): MutableSet<Card> {
-    val pips = mutableListOf("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
-    val suits = mutableListOf('\u2663', '\u2660', '\u2666', '\u2665')
+    val pips = listOf("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
+    val suits = listOf('\u2663', '\u2660', '\u2666', '\u2665')
 
     val deck = mutableSetOf<Card>()
-    for (itemPip in pips.indices) {
-        for (itemSuit in suits.indices) {
-            deck.add(Card(pips[itemPip], suits[itemSuit]))
+    for (pip in pips) {
+        for (suit in suits) {
+            val card = Card(pip, suit)
+            deck.add(card)
         }
     }
     return deck
@@ -15,10 +16,14 @@ fun createDeck(): MutableSet<Card> {
 
 fun dealHand(deck: MutableSet<Card>, numberOfCards: Int) : MutableSet<Card> {
     val hand = mutableSetOf<Card>()
-    for (i in 1..numberOfCards) {
-        val card = deck.random()
-        hand.add(card)
-        deck.remove(card)
+    if (numberOfCards < 2 || numberOfCards >= 52) {
+        println("Not Support for the number of cards")
+    } else {
+        for (i in 1..numberOfCards) {
+            val card = deck.random()
+            hand.add(card)
+            deck.remove(card)
+        }
     }
     return hand
 }
@@ -37,9 +42,12 @@ fun evaluateHand(hand: MutableSet<Card>) : Int {
 }
 
 fun printResults(totalValue: Int, hand: MutableSet<Card>) {
-    println("Card on your hand:")
-    for (item in hand) {
-        println("""
+    if (hand.isEmpty()) {
+        println("Card on your hand is empty or not support")
+    } else {
+        println("Card on your hand:")
+        for (item in hand) {
+            println("""
             .-------.
             |${item.pip}      |
             |       |
@@ -47,13 +55,15 @@ fun printResults(totalValue: Int, hand: MutableSet<Card>) {
             |       |
             `-------'
         """.trimIndent())
+        }
+        println("Total value: $totalValue")
+        val message = when(totalValue) {
+            21 -> "You Win!"
+            in  1 until 21 -> "Try again or pick another card"
+            else -> "You Lose!"
+        }
+        println(message)
     }
-    println("Total value: $totalValue")
-    val message = when(totalValue) {
-        21 -> "You Win!"
-        else -> "You Lose!"
-    }
-    println(message)
 }
 
 fun main() {
