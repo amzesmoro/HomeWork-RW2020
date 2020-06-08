@@ -8,5 +8,6 @@ data class Cat(
     val name: String,
     val gender: String,
     val shelterId: String,
+    val breed: String,
     val sponsorships: MutableSet<Sponsorship> = mutableSetOf()
 )

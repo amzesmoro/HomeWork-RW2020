@@ -3,16 +3,12 @@ package model.caffe
 import model.animals.Cat
 import model.people.Employee
 import model.people.Person
+import java.time.LocalDate
+import java.time.format.TextStyle
+import java.util.*
 
 class Cafe {
 
-    // cafe related stuff
-
-    /**
-     * To simplify it, let's imitate a week-long cafe turnaround.
-     *
-     * Make sure to add your receipts to each set, with your data.
-     * */
     private val receiptsByDay = mutableMapOf(
         "Monday" to mutableSetOf<Receipt>(),
         "Tuesday" to mutableSetOf<Receipt>(),
@@ -23,54 +19,55 @@ class Cafe {
         "Sunday" to mutableSetOf<Receipt>()
     )
 
-    // maybe as employees check in, you can add them to the list of working employees!
-    private val employees = mutableSetOf<Employee>()
+    private val employees = mutableSetOf<Employee>(
+
+    )
     private val customers = mutableSetOf<Person>()
 
-    // make sure to add sponsorships and tie them to people!
     private val sponsorships = mutableSetOf<Sponsorship>()
 
-    // TODO Add logic for checking in and checking out!
     fun checkInEmployee(employee: Employee) {
-
+        employee.clockIn(employee)
+        employees.add(employee)
     }
 
     fun checkOutEmployee(employee: Employee) {
-
+        employee.clockOut(employee)
+        employees.add(employee)
     }
 
     fun showNumberOfReceiptsForDay(day: String) {
-        val receiptForDay = receiptsByDay[day] ?: return // wrong day inserted!
-
+        val receiptForDay = receiptsByDay[day] ?: return
         println("On $day you made ${receiptsByDay.size} transactions!")
     }
 
-    fun getReceipt(items: List<Product>, customerId: String): Receipt {
-        // TODO return a receipt! Also make sure to check if customer is also an employee
-
-        return Receipt()
+    fun getReceipt(items: List<Product>, customerId: String, tax: Double, tip: Double): Receipt {
+        val day = LocalDate.now().dayOfWeek.getDisplayName(TextStyle.FULL, Locale.ENGLISH)
+        val receipt = Receipt(customerId = customerId, items = items.toMutableList(), tax = tax, tip = tip)
+        receiptsByDay[day]?.add(receipt)
+        return receipt
     }
 
     fun addSponsorship(catId: String, personId: String) {
-        // TODO add the sponsorship
+        sponsorships.add(Sponsorship(personId, catId))
     }
 
     fun getWorkingEmployees(): Set<Employee> = employees
 
     fun getAdoptedCats(): Set<Cat> {
-
+        return setOf()
     }
 
     fun getSponsoredCats(): Set<Cat> {
-
+        return setOf()
     }
 
     fun getMostPopularCats(): Set<Cat> {
-
+        return setOf()
     }
 
     fun getTopSellingItems(): Set<Product> {
-
+        return setOf()
     }
 
     fun getAdopters(): List<Person> {
