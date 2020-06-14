@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kartu Presiden</string>
+    <string name="application_info">Info Aplikasi</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="about_me">Halo, nama saya adalah Amzesmoro Sianturi, saya berasal dari Medan, Sumatera Utara Indonesia. Anda dapat menghubungi saya melalui email saya: amzesmoro05@gmail.com</string>
+    <string name="avatar_president">Ini gambar Presiden Indonesia</string>
+    <string name="period">Periode</string>
+    <string name="too">Masa Jabatan</string>
+    <string name="share">Bagikan</string>
+    <string name="jokowi">Joko Widodo</string>
+    <string name="oktober_20">20 Oktober 2014 - Sekarang</string>
+    <string name="almost_6_years">Hampir 6 tahun</string>
+    <string name="about_menu">Tentang</string>
+    <string name="info_title">Presiden Indonesia</string>
+    <string name="info_message">Ini adalah aplikasi sederhana. Aplikasi ini dibangun untuk memenuhi tugas Minggu 3. Saya mendapatkan sumber daya dari: https://indonesia.go.id/profil/presiden-dan-wakil-presiden. Versi Aplikasi: 1.0.0 :]</string>
+</resources>

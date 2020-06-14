@@ -1,6 +1,16 @@
 <resources>
-    <string name="app_name">Business Card</string>
+    <string name="app_name">President Card</string>
     <string name="application_info">Application Info</string>
-    <string name="share_menu">Share Menu</string>
     <string name="change_language">Change Language</string>
+    <string name="about_me">Hello, my name is Amzesmoro Sianturi, I come from Medan, North Sumatera Indonesia. You can contact me by: amzesmoro05@gmail.com</string>
+    <string name="avatar_president">Avatar President of Indoensia</string>
+    <string name="period">Period</string>
+    <string name="too">Term of Office</string>
+    <string name="share">Share</string>
+    <string name="jokowi">Joko Widodo</string>
+    <string name="oktober_20">October 20, 2014 - Present</string>
+    <string name="almost_6_years">Almost 6 years</string>
+    <string name="about_menu">About</string>
+    <string name="info_title">President of Indonesia</string>
+    <string name="info_message">This is a simple app. This App is built to fulfill assignment of Week 3. I get the resources from: https://indonesia.go.id/profil/presiden-dan-wakil-presiden. Application Version: 1.0.0 :]</string>
 </resources>
