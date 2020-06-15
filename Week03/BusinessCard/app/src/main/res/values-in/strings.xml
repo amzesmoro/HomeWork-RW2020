@@ -14,4 +14,59 @@
     <string name="about_menu">Tentang</string>
     <string name="info_title">Presiden Indonesia</string>
     <string name="info_message">Ini adalah aplikasi sederhana. Aplikasi ini dibangun untuk memenuhi tugas Minggu 3. Saya mendapatkan sumber daya dari: https://indonesia.go.id/profil/presiden-dan-wakil-presiden. Versi Aplikasi: 1.0.0 :]</string>
+    <string name="sequence_of_president">Urutan Presiden</string>
+    <string name="tobe_is">adalah</string>
+    <string name="of_indonesia">Indonesia dari tahun</string>
+    <string name="term_of_office">dengan masa jabatan nya adalah</string>
+    <string name="share_to">Bagikan Ke:</string>
+
+    <string-array name="president_sequence">
+        <item>Presiden Ketujuh</item>
+        <item>Presiden Keenam</item>
+        <item>Presiden Kelima</item>
+        <item>Presiden Keempat</item>
+        <item>Presiden Ketiga</item>
+        <item>Presiden Kedua</item>
+        <item>Presiden Pertama</item>
+    </string-array>
+
+    <string-array name="president_name">
+        <item>Joko Widodo</item>
+        <item>Susilo Bambang Yudhoyono</item>
+        <item>Megawati Soekarnoputri</item>
+        <item>Abdurrahman Wahid</item>
+        <item>Bacharuddin Jusuf Habibie</item>
+        <item>Soeharto</item>
+        <item>Soekarno</item>
+    </string-array>
+
+    <string-array name="president_image">
+        <item>@drawable/jokowi</item>
+        <item>@drawable/sby</item>
+        <item>@drawable/megawati</item>
+        <item>@drawable/abdurrahman</item>
+        <item>@drawable/habibie</item>
+        <item>@drawable/soeharto</item>
+        <item>@drawable/soekarno</item>
+    </string-array>
+
+    <string-array name="president_period">
+        <item>20 Oktober 2014 - Sekarang</item>
+        <item>20 Oktober 2004 - 20 Oktober 2014</item>
+        <item>23 Juli 2001 - 20 Oktober 2004</item>
+        <item>20 Oktober 1999 - 23 Juli 2001</item>
+        <item>21 Mei 1998 - 20 Oktober 1999</item>
+        <item>12 Maret 1967 - 21 Mei 1998</item>
+        <item>18 Agustus 1945 - 12 Maret 1967</item>
+    </string-array>
+
+    <string-array name="president_too">
+        <item>Hampir 6 tahun</item>
+        <item>10 tahun</item>
+        <item>3 tahun</item>
+        <item>2 tahun</item>
+        <item>1 tahun</item>
+        <item>31 tahun</item>
+        <item>22 tahun</item>
+    </string-array>
 </resources>

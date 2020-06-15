@@ -13,4 +13,60 @@
     <string name="about_menu">About</string>
     <string name="info_title">President of Indonesia</string>
     <string name="info_message">This is a simple app. This App is built to fulfill assignment of Week 3. I get the resources from: https://indonesia.go.id/profil/presiden-dan-wakil-presiden. Application Version: 1.0.0 :]</string>
+    <string name="sequence_of_president">Sequence of President</string>
+    <string name="tobe_is">is</string>
+    <string name="of_indonesia">of Indonesia from</string>
+    <string name="term_of_office">with term of office is</string>
+    <string name="share_to">Share To:</string>
+
+    <string-array name="president_sequence">
+        <item>Seventh President</item>
+        <item>Sixth President</item>
+        <item>Fifth President</item>
+        <item>Fourth President</item>
+        <item>Third President</item>
+        <item>Second President</item>
+        <item>First President</item>
+    </string-array>
+
+    <string-array name="president_name">
+        <item>Joko Widodo</item>
+        <item>Susilo Bambang Yudhoyono</item>
+        <item>Megawati Soekarnoputri</item>
+        <item>Abdurrahman Wahid</item>
+        <item>Bacharuddin Jusuf Habibie</item>
+        <item>Soeharto</item>
+        <item>Soekarno</item>
+    </string-array>
+
+    <string-array name="president_image">
+        <item>@drawable/jokowi</item>
+        <item>@drawable/sby</item>
+        <item>@drawable/megawati</item>
+        <item>@drawable/abdurrahman</item>
+        <item>@drawable/habibie</item>
+        <item>@drawable/soeharto</item>
+        <item>@drawable/soekarno</item>
+    </string-array>
+
+    <string-array name="president_period">
+        <item>October 20, 2014 - Present</item>
+        <item>October 20, 2004 - October 20, 2014</item>
+        <item>July 23, 2001 - October 20, 2004</item>
+        <item>October 20, 1999 - July 23, 2001</item>
+        <item>May 21, 1998 - October 20, 1999</item>
+        <item>March 12, 1967 - May 21, 1998</item>
+        <item>August 18, 1945 - March 12, 1967</item>
+    </string-array>
+
+    <string-array name="president_too">
+        <item>Almost 6 years</item>
+        <item>10 years</item>
+        <item>3 years</item>
+        <item>2 years</item>
+        <item>1 year</item>
+        <item>31 years</item>
+        <item>22 years</item>
+    </string-array>
+
 </resources>

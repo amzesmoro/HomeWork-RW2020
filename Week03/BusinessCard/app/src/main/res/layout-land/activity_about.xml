@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:gravity="center"
     tools:context=".AboutActivity">
 
@@ -19,7 +19,7 @@
         android:id="@+id/profileCv"
         android:layout_width="@dimen/card_view_profile"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_vertical_profile"
+        android:layout_marginStart="@dimen/margin_start_16dp"
         app:cardCornerRadius="@dimen/card_view_radius"
         app:cardBackgroundColor="@color/cardColor">
 

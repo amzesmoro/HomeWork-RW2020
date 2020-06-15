@@ -7,11 +7,46 @@ import android.provider.Settings
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private val listPresident = ArrayList<President>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        rv_president.setHasFixedSize(true)
+
+        listPresident.addAll(getListPresident())
+
+        rv_president.layoutManager = LinearLayoutManager(this)
+        val cardViewPresidentAdapter = CardViewPresidentAdapter(listPresident)
+        rv_president.adapter = cardViewPresidentAdapter
+    }
+
+    private fun getListPresident(): ArrayList<President> {
+        val presidentSequence = resources.getStringArray(R.array.president_sequence)
+        val presidentName = resources.getStringArray(R.array.president_name)
+        val presidentPeriod = resources.getStringArray(R.array.president_period)
+        val presidentToo = resources.getStringArray(R.array.president_too)
+        val presidentImage = resources.getStringArray(R.array.president_image)
+
+        // update later
+        val list = ArrayList<President>()
+        for (position in presidentSequence.indices) {
+            val president = President(
+                presidentSequence[position],
+                presidentName[position],
+                presidentPeriod[position],
+                presidentToo[position],
+                presidentImage[position]
+            )
+            list.add(president)
+        }
+        return list
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -40,11 +75,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showInfo() {
-        val dialogTitile = getString(R.string.info_title)
+        val dialogTitle = getString(R.string.info_title)
         val dialogMessage = getString(R.string.info_message)
 
         val builder = AlertDialog.Builder(this)
-        builder.setTitle(dialogTitile)
+        builder.setTitle(dialogTitle)
         builder.setMessage(dialogMessage)
         builder.create().show()
     }
