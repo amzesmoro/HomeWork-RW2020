@@ -19,9 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         rv_president.setHasFixedSize(true)
-
         listPresident.addAll(getListPresident())
-
         rv_president.layoutManager = LinearLayoutManager(this)
         val cardViewPresidentAdapter = CardViewPresidentAdapter(listPresident)
         rv_president.adapter = cardViewPresidentAdapter
@@ -32,9 +30,8 @@ class MainActivity : AppCompatActivity() {
         val presidentName = resources.getStringArray(R.array.president_name)
         val presidentPeriod = resources.getStringArray(R.array.president_period)
         val presidentToo = resources.getStringArray(R.array.president_too)
-        val presidentImage = resources.getStringArray(R.array.president_image)
+        val presidentImage = resources.obtainTypedArray(R.array.president_image)
 
-        // update later
         val list = ArrayList<President>()
         for (position in presidentSequence.indices) {
             val president = President(
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 presidentName[position],
                 presidentPeriod[position],
                 presidentToo[position],
-                presidentImage[position]
+                presidentImage.getResourceId(position, 0)
             )
             list.add(president)
         }

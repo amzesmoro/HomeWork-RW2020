@@ -5,7 +5,7 @@
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/secondaryColor</item>
-        <item name="android:fontFamily">@font/muli_semibold</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
     </style>
 
 </resources>

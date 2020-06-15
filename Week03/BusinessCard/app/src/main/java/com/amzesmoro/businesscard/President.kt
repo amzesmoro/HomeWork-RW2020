@@ -5,5 +5,5 @@ data class President(
     val presidentName: String,
     val presidentPeriod: String,
     val presidentTermOfOfice: String,
-    val presidentPhoto: String
+    val presidentPhoto: Int
 )

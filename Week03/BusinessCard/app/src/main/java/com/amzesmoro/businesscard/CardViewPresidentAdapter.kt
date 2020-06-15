@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_president.view.*
 
 class CardViewPresidentAdapter(private val listPresident: ArrayList<President>)
@@ -29,7 +29,7 @@ class CardViewPresidentAdapter(private val listPresident: ArrayList<President>)
                 nameOfPresidentTv.text = president.presidentName
                 periodOfPresidentTv.text = president.presidentPeriod
                 tooOfPresidentTv.text = president.presidentTermOfOfice
-                Picasso.get()
+                Glide.with(itemView.context)
                     .load(president.presidentPhoto)
                     .placeholder(R.drawable.ic_baseline_account_box)
                     .into(presidentImg)

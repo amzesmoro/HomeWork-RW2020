@@ -31,10 +31,10 @@
 
     <string-array name="president_name">
         <item>Joko Widodo</item>
-        <item>Susilo Bambang Yudhoyono</item>
+        <item>S B Yudhoyono</item>
         <item>Megawati Soekarnoputri</item>
         <item>Abdurrahman Wahid</item>
-        <item>Bacharuddin Jusuf Habibie</item>
+        <item>B J Habibie</item>
         <item>Soeharto</item>
         <item>Soekarno</item>
     </string-array>
@@ -50,13 +50,13 @@
     </string-array>
 
     <string-array name="president_period">
-        <item>October 20, 2014 - Present</item>
-        <item>October 20, 2004 - October 20, 2014</item>
-        <item>July 23, 2001 - October 20, 2004</item>
-        <item>October 20, 1999 - July 23, 2001</item>
-        <item>May 21, 1998 - October 20, 1999</item>
-        <item>March 12, 1967 - May 21, 1998</item>
-        <item>August 18, 1945 - March 12, 1967</item>
+        <item>October 2014-Present</item>
+        <item>October 2004-October 2014</item>
+        <item>July 2001-October 2004</item>
+        <item>October 1999-July 2001</item>
+        <item>May 1998-October 1999</item>
+        <item>March 1967-May 1998</item>
+        <item>August 1945-March 1967</item>
     </string-array>
 
     <string-array name="president_too">
