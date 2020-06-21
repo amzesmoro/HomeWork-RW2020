@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_16dp"
         app:cardCornerRadius="@dimen/card_view_radius"
-        app:cardBackgroundColor="@color/cardColor">
+        app:cardBackgroundColor="@color/lightPureGray">
 
         <TextView
             android:id="@+id/profileTv"
