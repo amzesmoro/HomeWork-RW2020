@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_view_height"
+    android:layout_margin="@dimen/margin"
+    app:cardCornerRadius="@dimen/card_view_radius"
+    app:cardBackgroundColor="@color/lightPureGray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cv_const_height"
+        android:layout_margin="@dimen/margin">
+
+        <TextView
+            android:id="@+id/sequenceOfPresidentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/sequence_of_president"
+            android:textSize="@dimen/president_name_text_size"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/presidentImg"
+            android:layout_width="@dimen/president_img_width"
+            android:layout_height="@dimen/president_img_height"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/avatar_president"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sequenceOfPresidentTv"
+            tools:src="@drawable/jokowi" />
+
+        <TextView
+            android:id="@+id/nameOfPresidentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="@string/jokowi"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/margin_start_16dp"
+            app:layout_constraintTop_toBottomOf="@id/sequenceOfPresidentTv"
+            app:layout_constraintStart_toEndOf="@id/presidentImg"/>
+
+        <TextView
+            android:id="@+id/periodTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/period"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/margin_start_16dp"
+            app:layout_constraintTop_toBottomOf="@id/nameOfPresidentTv"
+            app:layout_constraintStart_toEndOf="@id/presidentImg"/>
+
+        <TextView
+            android:id="@+id/periodOfPresidentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            tools:text="@string/oktober_20"
+            android:singleLine="true"
+            android:layout_marginStart="@dimen/margin_start_16dp"
+            app:layout_constraintTop_toBottomOf="@id/periodTv"
+            app:layout_constraintStart_toEndOf="@id/presidentImg"/>
+
+        <TextView
+            android:id="@+id/tooTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/too"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/margin_start_16dp"
+            app:layout_constraintTop_toBottomOf="@id/periodOfPresidentTv"
+            app:layout_constraintStart_toEndOf="@id/presidentImg"/>
+
+        <TextView
+            android:id="@+id/tooOfPresidentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            tools:text="@string/almost_6_years"
+            android:layout_marginStart="@dimen/margin_start_16dp"
+            app:layout_constraintTop_toBottomOf="@id/tooTv"
+            app:layout_constraintStart_toEndOf="@id/presidentImg"/>
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/presidentImg"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
