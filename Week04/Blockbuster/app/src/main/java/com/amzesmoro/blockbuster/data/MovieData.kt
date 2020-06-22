@@ -104,10 +104,23 @@ object MovieData {
         R.drawable.mv_fall_in_love_first_kiss
     )
 
+    private val movieBackdropPoster = intArrayOf(
+        R.drawable.mv_backdrop_parasite,
+        R.drawable.mv_backdrop_spiderman_far_from_home,
+        R.drawable.mv_backdrop_aladdin,
+        R.drawable.mv_backdrop_lion_king,
+        R.drawable.mv_backdrop_alita,
+        R.drawable.mv_backdrop_your_name,
+        R.drawable.mv_backdrop_five_feet_apart,
+        R.drawable.mv_backdrop_marlina,
+        R.drawable.mv_backdrop_two_blue_stripes,
+        R.drawable.mv_backdrop_fall_in_love_first_kiss
+    )
+
     private val movieGenre = arrayOf(
         "Comedy, Thriller, Drama",
         "Action, Adventure, Science Fiction",
-        "Adventure, Fantasy, Romance, Comedy, Family",
+        "Comedy, Romance, Family",
         "Adventure, Family",
         "Action, Science Fiction, Adventure",
         "Romance, Animation, Drama",
@@ -166,6 +179,7 @@ object MovieData {
                     movieTitle[position],
                     movieSummary[position],
                     moviePoster[position],
+                    movieBackdropPoster[position],
                     movieGenre[position],
                     movieDuration[position],
                     movieOriginalLanguage[position],

@@ -5,8 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.amzesmoro.blockbuster.R
 import com.amzesmoro.blockbuster.data.Movie
+import com.amzesmoro.blockbuster.utils.MovieClickListener
 
-class MovieAdapter : RecyclerView.Adapter<MovieViewHolder>() {
+class MovieAdapter(private val clickListener: MovieClickListener) : RecyclerView.Adapter<MovieViewHolder>() {
 
     private val movies = mutableListOf<Movie>()
 
@@ -24,7 +25,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieViewHolder>() {
     override fun getItemCount(): Int = movies.size
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
-        holder.bind(movies[position])
+        holder.bind(movies[position], clickListener)
     }
 
 }
