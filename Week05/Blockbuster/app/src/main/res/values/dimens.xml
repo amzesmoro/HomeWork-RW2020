@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="half_margin">8dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="half_padding">8dp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="width_cv">130dp</dimen>
+    <dimen name="height_cv">170dp</dimen>
+    <dimen name="height_poster_img">230dp</dimen>
+</resources>

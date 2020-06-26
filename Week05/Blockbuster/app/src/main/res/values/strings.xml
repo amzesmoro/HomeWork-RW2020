@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Blockbuster</string>
+    <string name="this_is_a_poster">This is a poster</string>
+    <string name="this_is_backdrop_poster">This is backdrop Poster</string>
+    <string name="backslash_symbol">/</string>
+    <string name="description">Description</string>
+    <string name="this_is_star_image">This is star image</string>
+    <string name="genre">Genre</string>
+    <string name="parasite">Parasite</string>
+    <string name="may_15_2017">May 15, 2017</string>
+    <string name="one_h_33m">1h 33m</string>
+    <string name="seventy_one_percent">71%</string>
+    <string name="thriller_drama_western">Thriller, Drama, Western</string>
+    <string name="desc_marlina">In the deserted hills of an Indonesian island, Marlina, a young widow, is attacked, raped and robbed for her cattle. To defend herself, she kills several men of the gang. Seeking justice, she goes on a journey for empowerment and redemption. But the road is long, especially when the ghost of her headless victim begins to haunt her.</string>
+</resources>
