@@ -1,9 +1,9 @@
 package com.amzesmoro.blockbuster.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.amzesmoro.blockbuster.R
-import com.amzesmoro.blockbuster.data.Movie
+import com.amzesmoro.blockbuster.model.Movie
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detail.*
 
@@ -26,12 +26,21 @@ class DetailActivity : AppCompatActivity() {
         movieDurationTv.text = movie.movieDuration
         movieOriginalLanguageTv.text = movie.originalLanguage
         movieDescriptionTv.text = movie.summary
-        movie.poster?.let {
+        movie.poster.let {
             Picasso.get().load(it).into(posterImage)
         }
-        movie.backdropPoster?.let {
+        movie.backdropPoster.let {
             Picasso.get().load(it).into(backdropPosterImage)
         }
-
+        /*movieShareBtn.setOnClickListener {
+            val message = "${movieNameTv.text}.\nDescription is: ${movieDescriptionTv.text}"
+            val shareIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, message)
+                type = "plain/text"
+            }
+            startActivity(Intent.createChooser(shareIntent, "Share"))
+        }*/
     }
+
 }

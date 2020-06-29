@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Blockbuster</string>
+    <string name="app_name">Movies</string>
     <string name="this_is_a_poster">This is a poster</string>
     <string name="this_is_backdrop_poster">This is backdrop Poster</string>
     <string name="backslash_symbol">/</string>
@@ -12,4 +12,17 @@
     <string name="seventy_one_percent">71%</string>
     <string name="thriller_drama_western">Thriller, Drama, Western</string>
     <string name="desc_marlina">In the deserted hills of an Indonesian island, Marlina, a young widow, is attacked, raped and robbed for her cattle. To defend herself, she kills several men of the gang. Seeking justice, she goes on a journey for empowerment and redemption. But the road is long, especially when the ghost of her headless victim begins to haunt her.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greetings">Find more movies what you want!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="this_is_logo_application">This is logo application</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="share_movie">Share Movie</string>
+    <string name="marlina">Marlina the Murderer in Four Acts</string>
+    <string name="remove_from_favorite">Remove from Favorite</string>
+    <string name="amzesmoro">Amzesmoro Sianturi</string>
+    <string name="welcome_to_movies">Welcome To Movies</string>
 </resources>

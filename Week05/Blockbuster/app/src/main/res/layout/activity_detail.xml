@@ -145,7 +145,7 @@
             android:textSize="@dimen/text_size_18"
             android:textStyle="bold"
             android:textColor="@android:color/black"
-            tools:text="Marlina the Murderer in Four Acts"
+            tools:text="@string/marlina"
             android:layout_marginStart="@dimen/half_margin"
             android:layout_marginTop="@dimen/half_margin"
             android:layout_marginEnd="@dimen/half_margin"
@@ -187,19 +187,49 @@
             android:layout_marginStart="@dimen/half_margin"
             android:layout_marginTop="@dimen/half_margin"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/genreTv"/>
+            app:layout_constraintTop_toBottomOf="@id/movieGenreTv"/>
 
         <TextView
             android:id="@+id/movieDescriptionTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/half_padding"
-            android:layout_marginTop="@dimen/half_margin"
             android:textSize="@dimen/text_size_16"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/descriptionTv"
             tools:text="@string/desc_marlina" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/half_margin"
+            app:layout_constraintTop_toBottomOf="@id/movieDescriptionTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/movieShareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/share_movie"
+                android:drawablePadding="@dimen/half_padding"
+                android:drawableEnd="@drawable/ic_outline_share"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/movieFavoriteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/add_to_favorite"
+                android:drawableEnd="@drawable/ic_baseline_favorite_border"
+                android:drawablePadding="@dimen/half_padding"/>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

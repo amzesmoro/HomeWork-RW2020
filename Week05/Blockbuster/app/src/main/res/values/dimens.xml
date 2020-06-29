@@ -11,4 +11,7 @@
     <dimen name="width_cv">130dp</dimen>
     <dimen name="height_cv">170dp</dimen>
     <dimen name="height_poster_img">230dp</dimen>
+    <dimen name="margin_120dp">120dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
 </resources>
