@@ -1,4 +1,4 @@
-package com.amzesmoro.blockbuster.ui.login
+package com.amzesmoro.blockbuster.ui.movie
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,17 +9,15 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import com.amzesmoro.blockbuster.R
 import com.amzesmoro.blockbuster.model.User
 import com.amzesmoro.blockbuster.model.UserPreference
-import com.amzesmoro.blockbuster.ui.movie.MovieActivity
-import com.amzesmoro.blockbuster.ui.movie.MoviePagerAdapter
-import kotlinx.android.synthetic.main.activity_main.*
+import com.amzesmoro.blockbuster.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.tabLayout
 import kotlinx.android.synthetic.main.activity_main.viewPager
-import kotlinx.android.synthetic.main.activity_movie.*
+
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var user: User
-    private lateinit var userPreference: UserPreference
+    private val userPreference by lazy { UserPreference() }
+    private val user by lazy { User() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,10 +26,6 @@ class MainActivity : AppCompatActivity() {
         val pagerAdapter = MoviePagerAdapter(supportFragmentManager, FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)
         viewPager.adapter = pagerAdapter
         tabLayout.setupWithViewPager(viewPager)
-        userPreference = UserPreference(this)
-        if (!userPreference.isUserLoggedIn()) {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -40,9 +34,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        userPreference.setUser(user, false)
-        startActivity(Intent(this, MainActivity::class.java))
-        return super.onOptionsItemSelected(item)
+        return when(item.itemId) {
+            R.id.logoutMenu -> {
+                userPreference.setUserLoggedIn(user, false)
+                navigateToLoginScreen()
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun navigateToLoginScreen() {
+        startActivity(Intent(this, LoginActivity::class.java))
+        finish()
     }
 
 }
+

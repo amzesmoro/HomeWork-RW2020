@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="this_is_a_poster">This is a poster</string>
+    <string name="this_is_backdrop_poster">This is backdrop Poster</string>
+    <string name="backslash_symbol">/</string>
+    <string name="description">Description</string>
+    <string name="this_is_star_image">This is star image</string>
+    <string name="genre">Genre</string>
+    <string name="parasite">Parasite</string>
+    <string name="may_15_2017">May 15, 2017</string>
+    <string name="one_h_33m">1h 33m</string>
+    <string name="seventy_one_percent">71%</string>
+    <string name="thriller_drama_western">Thriller, Drama, Western</string>
+    <string name="desc_marlina">In the deserted hills of an Indonesian island, Marlina, a young widow, is attacked, raped and robbed for her cattle. To defend herself, she kills several men of the gang. Seeking justice, she goes on a journey for empowerment and redemption. But the road is long, especially when the ghost of her headless victim begins to haunt her.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greetings">Find more movies what you want!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="this_is_logo_application">This is logo application</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="share_movie">Share Movie</string>
+    <string name="marlina">Marlina the Murderer in Four Acts</string>
+    <string name="remove_from_favorite">Remove from Favorite</string>
+    <string name="amzesmoro">Amzesmoro Sianturi</string>
+    <string name="welcome_to_movies">Welcome To Movies</string>
+    <string name="outline_lock">Outline Lock</string>
+    <string name="outline_account_circle">Outline Account Circle</string>
+    <string name="username_text_error">Username cannot be only one letter</string>
+    <string name="password_text_error">Password has to be at least 4 letters</string>
+</resources>
